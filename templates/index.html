@@ -1,0 +1,994 @@
+{% extends 'base.html'%}
+{% block content %}
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css' %}">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
+<link rel="stylesheet" type="text/css" href="css/aos.css">
+<style type="text/css">
+  .move{ animation: anim1 20s reverse infinite;  }
+  @keyframes anim1{
+    from{ transform: rotate(0deg); }
+    to{transform: rotate(360deg);}
+  }
+  .main:hover{animation: anim2 0.7s linear }
+    @keyframes anim2{
+    from{margin-top: 15px }
+    to{margin-top: 1px}
+    }
+
+     .ho:hover { color: #8C1AFF}
+    .navbar li a{padding-left: 30px !important; font-size: 20px;}
+</style>
+	
+</head>
+<body>
+
+
+
+<div class="container-fluid">
+<div class="row pb-5" style="background-image:url({%static 'images/bg.jpg' %} ); height: 760px; margin-bottom: -5px; ">
+	<div class="col-md-1 "></div>
+	<div class="col-md-5 " style=" padding-top: 150px;">
+                <h2 class="" style="font-size: 7rem;color: white; font-weight: 700;"><i>COVID-19</i></h2>
+                    <h2 class="pt" style="font-size: 7.5rem;color: white; font-weight: 300;"><span> <i>All <span style="font-weight: 750; font-size: 8srem;">Live</span> Update</h2></i> </span>
+                        <p class="pt-5" style="font-size: 18px;color: white;">Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, tests, and death toll due to the COVID-19 coronavirus.</p>
+                            <a href="http://127.0.0.1:8000/main/?#Visualization" class="btn btn-outline-light  rounded-pill btho2 pl-5 pr-5 pt-2 mt-3 pb-2"style="font-size: 24px;"> VISUALIZATION </a>
+	</div>
+				<div class="col-md-5 pl-5" style="padding-top:70px">
+        <img src={%static "images/aa.png" %} width="100%"; class="move" >   </div>
+    <div class="col-md-1 "></div>
+</div>
+</h2>
+</div></div>
+
+
+<div class="container-fluid "  >
+<div class="container  pb-5" style="margin-top: -30px;">
+	
+		<div class="row">
+			
+			<div class="col-md-12  bg-light  " >
+				<div class="row">
+					
+					<div class="col-3 shadow pt-3 pb-3"> 
+						<div class="row">
+							<div class="col-md-4 "><img src={%static "images/table.png" %}></div>
+							<div class="col-md-8">
+								<h2 class="ho pt-2 text-center">213,385,288</h2><p class="text-center" style="font-size: 16px;">Total Covid Cases</p></div>
+						</div>
+					</div>
+					<div class="col-3 shadow pt-3 pb-3"> 
+						<div class="row">
+							<div class="col-md-4"><img src={%static "images/table2.png" %}></div>
+							<div class="col-md-8">
+								<h2 class="ho pt-2 text-center">4,455,250</h2><p class="text-center" style="font-size: 16px;">Total Death Cases</p></div>
+						</div>
+					</div>
+					<div class="col-3 shadow pt-3 pb-3"> 
+						<div class="row">
+							<div class="col-md-4"><img src={%static "images/table3.png" %}></div>
+							<div class="col-md-8">
+							<h2 class="ho pt-2 text-center">190,947,625</h2><p class="text-center" style="font-size: 16px;">Total Recovered Cases</p></div>
+						</div>
+					</div>
+					<div class="col-3 shadow pt-3 pb-3"> 
+						<div class="row">
+							<div class="col-md-4 pt-2"><img src={%static "images/table4.png" %}></div>
+							<div class="col-md-8">
+							<h2 class="ho pt-2 text-center">5,000,000,000</h2><p class="text-center" style="font-size: 16px;">Total Vaccine Count</p></div>
+						</div>
+					</div>
+</div></div>
+			</div>
+			
+		<div class="row pt-5" id="Rate" style="padding-left:15px; padding-top:20px">
+			<div class="col-md-8 border  shadow " style="background-color: #f2f2f2" >
+        <div class="container pt-4" >
+			<div class="row">
+        	<div class="col-md-6">
+            	<h2 class="mr-auto" style="color: grey;">Covid-19 Affected Areas</h2>
+          </div>
+          <div class="col-md-3">
+                  	<ul class="ml-auto" style="list-style-type: disc; color:#8a00e6">
+                    	<li style="font-size:16px "><b>Most Affected</b></li>
+                     		
+                          </div>
+<div class="col-md-3">
+                   
+                     
+                        <li style="font-size:16px; padding-right: 20px; color: #c266ff; list-style-type: disc;"><b>Less Affected</b></li>
+                          </ul>
+                          </div>
+                        </div></ul>
+                 						<div class="" style="padding-top: 25px;">
+                                	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-141e6013-60eb-4c4b-856a-150fae68434f"></div>
+                            </div>
+      
+			</div>
+			</div>
+			<div class="col-md-4 " >
+			<div class="row">
+        	<div class=" mr-auto ml-auto shadow" style="background-color: #f2f2f2">
+        	<div class="container pl-5 "style="padding-bottom: 10px; padding-right: 60px; background-color: #f2f2f2">
+           	<h1 class="text-center pl-4 pt-3">Top 10 Countries</h1>
+    
+            <br></div>
+          
+                
+                 						<div class="pl-4 pr-4 pb-4" style="background-color: #f2f2f2">
+                                	<table class="table  " style="background-color: white;">
+  <thead> 
+    <tr >
+      <th scope="col ">Country</th>
+      <th></th>
+      <th scope="col">Case</th>
+      <th scope="col">Deaths</th>
+    </tr>
+  </thead>
+  <tbody class=" pl-3 pr-3">
+    <tr >
+      <th scope="row"><img src={%static "images/USA.png" %}> USA</th>
+      <td></td>
+      <td>85,678</td>
+      <td>1,301</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/china.png" %}> China</th>
+      <td></td>
+      <td>81,340</td>
+      <td>3,292</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/italy.png" %}> italy</th>
+      <td></td>
+      <td>80,589</td>
+      <td>8,215</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/spain.png" %}> Spain</th>
+      <td></td>
+      <td>57,786</td>
+      <td>4,365</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/ger.png" %}> Germany</th>
+      <td></td>
+      <td>43,938</td>
+      <td>267</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/iran.png" %}> Iran</th>
+      <td></td>
+      <td>29,406</td>
+      <td>2,234</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/fr.png" %}> France</th>
+      <td></td>
+      <td>29,155</td>
+      <td>1,696</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/swit.png" %}> Switzerland</th>
+      <td></td>
+      <td>11,811</td>
+      <td>192</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/uk.png" %}> UK</th>
+      <td></td>
+      <td>11,658</td>
+      <td>578</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src={%static "images/sk.png" %}> S. Korea</th>
+      <td></td>
+      <td>9,332</td>
+      <td>139</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+      </div>
+			
+			</div></div>
+</div>
+</div>
+</div>
+-->
+<div class="row pt-4" id="Visualization">
+    <div class="col-md-12 text-center">
+      <h1 style="font-size: 2.5rem; font-weight: 500; padding-top:70px">Visualization Menu</h1>
+    </div>
+  </div>
+
+<div class="container pt-2">
+  <div class="row">
+    <div class="col-md-5 "style="padding-top:100px">
+    <div class="container shadow text-center outline-dark  mb-5 pt-3 mt-5">
+      <a href="http://127.0.0.1:8000/main/?#Visualization" class="a1 lnk ">MAP</a><hr>
+    <a href="{% url 'p1' %}" class="a1 lnk "> Plot For Analyzing Different Cases Of A Specified State For 2020-2021</a><hr>
+    <a href="{% url 'p2' %}" class="a1 lnk pt-2">Plot For Analyzing Different Cases Of A Specified State For A Specified Year</a><hr/>
+    <a href="{% url 'p3' %}" class="a1 lnk pt-2">Plot For Analyzing Different Cases Of A Specified State For A Specified Month Of A Specified Year</a><hr/>
+    <a href="{% url 'p4' %}" class="a1 lnk pt-2"> Plot For Analyzing Cases of A State Within A Given Span Of Months And Specified Year </a><hr/>
+    <a href="{% url 'p5' %}" class="a1 lnk pt-2"> Plot For Analyzing Comparison of different states for selective years as per case status upto 10 states </a><hr/>
+    <a href="{% url 'p6' %}" class="a1 lnk pt-2"> Plot For Analyzing Comparison of two different states for all years as per case status </a><hr/>
+    <a href="{% url 'p7' %}" class="a1 lnk pt-2"> Plot For Analyzing Comparison of 2 different states for month slots for specified year </a><hr/>
+
+    </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-6">
+<img src={%static "images/R (2).jpg" %} usemap="#image-map" class="" >
+
+
+<map name="image-map" class="shadow">
+    
+    <area target="" alt="Karnatake" title="KARNATAKE
+
+comfirm-29,54,047
+cure-28,98,874
+deaths-37,401
+Vaccine-4,50,00,560" class="shadow outline-dark" coords="226,506,198,530,169,541,147,561,140,602,155,652,199,681,222,677,225,660,251,648,221,634,207,626,205,606,211,580,219,565" shape="poly">
+    
+
+    <area target="" alt="Kerala" title="KERALA
+
+comfirm-41,81,137
+cure-39,09,096
+deaths-21,422
+Vaccine-2,96,36,101" class="shadow"  coords="158,658,187,721,212,777,209,727,190,689" shape="poly">
+    
+
+    <area target="" alt="Tamil Nadu" title="TAMIL NADU
+
+comfirm-6,00,780
+cure-5,83,997
+deaths-16,439
+Vaccine-3,50,99,476" class="shadow" coords="299,639,283,683,289,721,260,745,245,757,222,785,225,748,220,731,209,710,201,690,226,690,231,659,259,655,244,663" shape="poly">
+    
+
+    <area target="" alt="Andhra Pradesh" title="ANDHRA PRADESH
+
+comfirm-20,19,702
+cure-19,90,916
+deaths-13,903
+Vaccine-3,12,99,846" class="shadow" coords="403,491,349,542,325,559,305,571,295,627,275,638,251,643,239,625,208,606,225,571,248,467,290,499,317,523,350,515,373,497" shape="poly">
+    
+
+    <area target="" alt="Maharashtra" class="shadow" title="MAHARASHTRA
+
+comfirm-64,82,117
+cure-62,88,851
+deaths-1,37,707
+Vaccine-6,29,51,338"  coords="111,455,126,568,141,569,139,555,174,528,199,520,216,504,246,467,288,471,292,493,302,467,299,435,297,421,230,424,199,432,149,410,139,438,126,452" shape="poly">
+    
+
+    <area target="" alt="Chhattisgarh" class="shadow" title="CHHATTISGARH
+
+comfirm-10,04,611
+cure-9,90,674
+deaths-13,556
+Vaccine-1,45,32,424"  coords="380,361,338,363,351,377,307,439,312,465,314,479,299,499,322,519,343,488,333,467,350,460,347,440,360,424,373,408,388,386" shape="poly">
+   
+
+    <area target="" alt="Orissa" class="shadow" title="ORISSA
+
+comfirm-10,10,753
+cure-9,96,300
+deaths-8,040
+Vaccine-2,37,32,153" coords="437,461,404,482,383,482,332,513,348,489,347,470,362,465,350,442,371,429,391,397,413,399,437,409,443,397,463,404,463,422,455,451" shape="poly">
+    
+
+    <area target="" alt="West Bengal" class="shadow" title="WEST BENGAL
+
+comfirm-15,51,364
+cure-15,24,194
+deaths-18,491
+Vaccine-4,33,95,187"  coords="525,294,525,274,498,266,487,269,489,288,480,296,487,311,484,319,483,335,481,345,439,371,484,409,513,401,500,367,499,345,492,333,495,319,503,315,489,297,499,284" shape="poly">
+    
+
+    <area target="" alt="Gujarat" class="shadow" title="GUJARAT
+
+comfirm-8,25,476
+cure-8,15,246
+deaths-10,082
+Vaccine-4,91,48,580"  coords="75,331,131,359,147,389,127,439,119,452,107,397,88,425,62,434,23,394,64,369,32,375,12,348,47,343,66,346" shape="poly">
+    
+
+    <area target="" class="shadow" alt="Madhya Pradesh" title="MADHYA PRADESH
+
+comfirm-7,92,237
+cure-7,81,607
+deaths-10,516
+Vaccine-4,86,32,050" coords="155,403,192,424,207,426,207,417,230,414,237,421,275,414,303,422,315,395,339,373,327,369,327,358,351,353,344,338,313,331,263,321,266,351,254,348,248,314,265,299,249,278,207,314,227,323,221,343,214,356,181,358,184,336,167,329,167,361,154,385" shape="poly">
+    
+
+    <area target="" alt="Jharkhand" class="shadow" title="JHARKHAND
+
+comfirm-3,47,942
+cure-3,42,676
+deaths-5,133
+Vaccine-1,38,71,486" coords="374,341,391,362,399,380,395,396,415,391,434,394,455,396,436,378,432,369,469,348,477,314,453,343,435,336,405,343" shape="poly">
+    
+
+    <area target="" alt="Bihar" class="shadow" title="BIHAR
+
+comfirm-7,25,745
+cure-7,16,025
+deaths-9,654
+Vaccine-3,95,40,878"  coords="487,285,432,285,385,261,402,305,373,324,377,336,413,341,431,329,443,333,462,329,473,313" shape="poly">
+    
+
+    <area target="" alt="Sikkim" class="shadow" title="SIKKIM
+
+comfirm-30,163
+cure-28,807
+deaths-373
+Vaccine-6,92,891" coords="494,242,483,259,488,262,497,259" shape="poly">
+    
+
+    <area target="" alt="Goa" class="shadow" title="GOA
+
+comfirm-1,74,347
+cure-1,70,222
+deaths-3,203
+Vaccine-16,26,480" coords="125,578,137,599,139,573" shape="poly">
+    
+
+    <area target="" alt="Rajasthan" class="shadow" title="RAJASTHAN
+
+comfirm-9,54,126
+cure-9,45,086
+deaths-8,954
+Vaccine-4,68,05,684"  coords="147,191,100,242,70,249,42,265,55,277,66,302,79,332,122,337,138,361,152,375,166,353,158,345,164,325,175,325,187,330,188,351,201,343,215,341,214,325,204,312,237,281,219,255,198,250,182,227,167,214" shape="poly">
+    
+
+    <area target="" alt="Uttar Pradesh" class="shadow dark" title="UTTAR PRADESH
+
+comfirm-17,09,427
+cure-16,86,323
+deaths-22,854
+Vaccine-7,75,34,131"  coords="235,188,231,231,235,274,267,284,267,311,279,324,298,315,314,319,328,322,355,336,361,351,375,338,365,320,390,304,380,285,379,266,319,245,271,223" shape="poly">
+    
+
+    <area target="" alt="Haryana" class="shadow" title="HARYANA
+
+comfirm-7,70,543
+cure-7,60,221
+deaths-9,683
+Vaccine-1,71,19,132" coords="218,175,210,199,189,207,169,197,167,212,182,217,195,239,216,248,222,253,228,242,212,232,224,224,227,196,229,187" shape="poly">
+    
+
+    <area target="" alt="Punjab" class="shadow" title="PUNJAB
+
+comfirm-6,00,780
+cure-5,83,997
+deaths-16,439
+Vaccine-1,49,04,581"  coords="188,133,152,183,166,190,181,199,199,190,211,182,211,163,201,158" shape="poly">
+    
+
+    <area target="" alt="Jammu &amp; Kashmir" title="JAMMU &AMP; KASHMIR
+
+comfirm-3,25,830
+cure-3,20,093
+deaths-4,410
+Vaccine-83,95,719" class="shadow" coords="184,127,152,108,149,73,161,57,129,29,176,1,191,9,233,44,275,35,295,46,267,88,283,125,229,112,199,110,214,108" shape="poly">
+    
+
+    <area target="" class="shadow" alt="Uttrakhand" title="UTTRAKHAND
+
+comfirm-3,43,084
+cure-3,35,303
+deaths-7,388
+Vaccine-89,11,194" coords="269,161,307,187,291,223,266,209,245,192,241,169,259,165" shape="poly">
+    
+
+    <area target="" class="shadow" alt="Himachal Pradesh" title="HIMACHAL PRADESH
+
+comfirm-2,14,408
+cure-2,09,041
+deaths-3,609
+Vaccine-73,59,684" coords="235,178,214,166,198,139,202,119,230,120,240,123,253,128,260,158,242,161" shape="poly">
+    
+
+    <area target="" alt="Assam" title="ASSAM
+
+comfirm-5,91,659
+cure-5,79,563
+deaths-5,693
+Vaccine-1,85,12,199" class="shadow"  coords="527,274,620,259,660,231,664,241,627,271,599,329,591,335,592,319,597,306,589,295,579,285,563,294,527,295" shape="poly">
+    
+
+    <area target="" alt="Mehgalaya" class="shadow" title="MEHGALAYA
+
+comfirm-76,767
+cure-73,236
+deaths-1,325
+Vaccine-13,54,948" coords="590,318,595,304,585,297,577,289,564,296,532,296,532,311,579,306" shape="poly">
+    
+
+    <area target="" alt="Arunachal Pradesh" class="shadow" title="ARUNACHAL PRADESH
+
+comfirm-53,302
+cure-52,276
+deaths-264
+Vaccine-9,91,138"  coords="608,258,632,242,664,227,673,238,663,252,691,239,696,230,681,218,680,200,674,194,658,198,630,198,604,221,575,243,587,261,599,256" shape="poly">
+    
+
+    <area target="" alt="NagaLand" class="shadow" title="NAGALAND
+
+comfirm-30,302
+cure-28,925
+deaths-626
+Vaccine-8,75,287" coords="655,258,637,269,626,287,615,303,625,295,645,295,652,278" shape="poly">
+    
+
+    <area target="" alt="Tripura" class="shadow" title="TRIPURA
+
+comfirm-83,284
+cure-81,689
+deaths-803
+Vaccine-33,66,180"  coords="583,330,565,345,579,370,580,354,588,347" shape="poly">
+    
+
+    <area target="" alt="Manipur" class="shadow" title="MANIPUR
+
+comfirm-1,15,077
+cure-1,10,003
+deaths-1,796
+Vaccine-15,62,413"  coords="638,297,647,309,637,324,632,334,611,333,613,316,622,305" shape="poly">
+    
+
+    <area target="" alt="Mizoram" class="shadow" title="MIZORAM
+
+comfirm-63,784
+cure-52,581
+deaths-222
+Vaccine-9,18,836"  coords="605,334,595,339,596,348,598,369,607,392,613,392,613,373,617,351,617,339" shape="poly">
+    
+    
+    <area target="" alt="Delhi" class="shadow outline-dark" title="DELHI
+
+comfirm-14,37,929
+cure-14,12,493
+deaths-25,082
+Vaccine-1,41,04,314" coords="224,225,217,231,223,235,229,235" shape="poly">
+</map>
+
+</div>
+</div></div>
+<div class="container" id="Information" >
+
+			<div class="row pt-5">
+				<div class="col-md-12 text-center" style="padding-top: 50px;">
+			<h5>How Virus Spread</h5><h1> Contagious Coronavirus</h1>
+				</div>
+			</div>
+
+			<div class="row pt-5" >
+  <div class="col-sm-4">
+    <div class="card main text-center shadow">
+      <div class="card-body ">
+      
+        <img  src={%static "images/c1.jpg" %}>
+        <h4 class="pb-2 ho">Human Contact</h4>
+        <p class="card-text ">Yes, infected people can transmit the virus both when they have symptoms and when they don't have symptoms.</p>
+        </div>
+      </div>
+    </div>
+  
+  
+  <div class="col-sm-4">
+   
+    <div class="card main text-center shadow">
+      <div class="card-body ">
+        <img  src={%static "images/c2.jpg" %}>
+        <h4 class="pb-2 ho">Air Transmission</h4>
+        <p class="card-text ">Inhalation of air carrying very small fine droplets and aerosol particles that contain infectious virus</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-4" >
+    
+    <div class="card main text-center shadow">
+      <div class="card-body ">
+      
+        <img  src={%static "images/c3.jpg" %}>
+        <h4 class="pb-2 ho">Contaminated Objects</h4>
+        <p class="card-text ">The coronavirus behind can linger on doorknobs,the virus from contaminated surfaces became infected.</p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container" id="Symptoms" style="padding-top:90px">
+<div class="row "  style="background-image:url({%static 'images/bg-white.png' %} ); padding-bottom: 80px;">
+
+<div class="col-md-12 text-center">
+      <h5>About Coronavirus</h5><h1><span style="font-size: 35px;">Coronavirus Symptoms</span></h1>
+</div>
+<div class="container mt-5">
+	<div class="row">
+     <div class="col-md-4"> 
+    <div class="card shadow mt-2" >
+      <div class="card-body ">
+      <div class="row">
+        <div class="col-md-3">
+        <img  src={%static "images/cs1.jpg" %} ></div>
+        <div class="col-md-9 ">
+        <p ><span style="font-size: 18px" ><b class="ho">Coughing And Sneezing</b><br/> </span><span style="">Symptoms may appear 2-14 days after exposure to virus.</span></p>
+</div>
+
+        </div>
+      </div>
+
+      </div>
+
+<div class="card shadow mt-2" >
+        <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/cs2.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px"  ><b class="ho">Shortness Of Breath</b><br/> </span><span style="">Dyspnea is one of the hallmark symptoms of Covid-19</span></p>
+</div>
+
+        </div></div></div>
+
+<div class="card shadow mt-2" >
+          <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/cs3.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" ><b class="ho">Confusion</b><br/> </span><span style="">Confusion is sixth most common symptom and is seen in 16% of the patients.</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+      </div>
+
+      <div class="col-md-4">
+      	<img src={%static "images/csm.png" %}  height="100%" width="100%" style="padding-top: 50px; ">
+      </div>
+<div class="col-sm-4">
+    <div class="card shadow mt-2" >
+      <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/cs4.jpg" %} "></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" ><b class="ho">Hot Fever</b><br/> </span><span style="">Fever may range from 100.4°F (38°C) or greater</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+<div class="card shadow mt-2" >
+        <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/cs5.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" ><b class="ho">Strong Headache</b><br/> </span><span style="">Annals of Internal Medicine suggests that 40–45% of cases occur without symptoms.</span></p>
+</div>
+
+        </div></div></div>
+
+<div class="card shadow mt-2" >
+          <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/cs6.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" ><b class="ho">Sore Throat</b><br/> </span><span style="">A sore throat can be one symptom of COVID-19.</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+      </div>
+
+</div>
+
+    </div>
+  </div>
+
+			
+		</div>
+    
+<div class="row pt-5" id="Preventions">
+        <div class="col-md-12 text-center" style="padding-top:50px">
+      <h5>Should Do And Should Avoid</h5><h1> Prevention Coronavirus Covid-19</h1>
+        </div>
+      </div>
+
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-md-6 text-center pt-5">
+        <h3 style="color:#00ffff">DO'S</h3>
+</div>
+<div class="col-md-6 text-center pt-5">
+        <h3 style="color: red;">DON'TS</h3>
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+     <div class="col-sm-6">
+    <div class="card shadow mt-4" >
+      <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p1.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" class="ho"><b>Clean your hands with sanitizer</b><br/> </span><span style="">There are many times you should use hand sanitizer, such as before and after touching a surface other people have touched.</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+<div class="card shadow mt-2" >
+        <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p2.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px " class="ho"><b>Wear a face mask outside</b><br/> </span><span style="">Wearing a face mask will help prevent the spread of infection and prevent the individual from contracting any airborne infectious germs.</span></p>
+</div>
+
+        </div></div></div>
+
+<div class="card shadow mt-2" >
+          <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p3.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" class="ho"><b>Cover your mouth with tissue paper</b><br/> </span><span style="">Covering coughs and sneezes and washing hands are especially important for infection control measures in healthcare settings</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+<div class="card shadow mt-2" >
+          <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p3.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" class="ho"><b>Get a regular body CheckUp</b><br/> </span><span style="">When you see your doctor regularly, they are able to detect health conditions or diseases early.</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+      </div>
+      
+
+<div class="col-sm-6">
+   
+    <div class="card shadow mt-4" >
+      <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p4.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" class="ho"><b>Do not Touch your  eyes, nose or mouth.</b><br></span><span style="">Covid is a conatgious disease and germs can get transferred to body via nose.</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+<div class="card shadow mt-2" >
+        <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p6.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" class="ho"><b>Avoid contact with sick people</b><br/> </span><span style="">Coronaviruses cannot multiply in food; they need an animal or human host to multiply. </span></p>
+</div>
+
+        </div></div></div>
+
+<div class="card shadow mt-2" >
+          <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p7.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" class="ho"><b>Avoid contact with animals</b><br/> </span><span style="">Coronaviruses cannot multiply in food; they need an animal or human host to multiply. </span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+<div class="card shadow mt-2" >
+          <div class="card-body ">
+      <div class="row"><div class="col-md-3">
+        <img  src={%static "images/p8.jpg" %} ></div>
+        <div class="col-md-9">
+        <p ><span style="font-size: 18px" class="ho"><b>Avoid visiting crowded places</b><br/> </span><span style="">
+The risks of getting COVID-19 are higher in crowded places because people spend long periods of time together.</span></p>
+</div>
+
+        </div></div>
+
+      </div>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<!----------------->
+
+
+<div class="container" id="FAQ">
+  <div class="row pt-5">
+        <div class="col-md-12 text-center" style="padding-top:50px">
+      <h5>FAQ's About Coronavirus-</h5><h1>Frequently Asked Questions</h1>
+        </div>
+      </div>
+  <div class="row pt-5 pb-5">
+    <div class="col-md-6">
+
+      <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left ho" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+          How the virus spread?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by other people or land on their eyes, noses, or mouth. In some circumstances, they may contaminate surfaces they touch.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+        What should I do if I get sick?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        People who have been in close contact with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months or who are fully vaccinated </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+        What is MIS-C?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+      Multisystem inflammatory syndrome in children (MIS-C) is a serious condition associated with COVID-19 where different body parts can become inflamed, including the heart, lungs, kidneys, brain, skin, eyes, or gastrointestinal organs.
+      </div>
+    </div>
+  </div>
+
+
+<div class="card">
+    <div class="card-header" id="headingThre">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse6">
+        Can we use Sanitizer on pets?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse4" class="collapse" aria-labelledby="headingThre" data-parent="#accordionExample">
+      <div class="card-body">
+        Do not wipe or bathe your pet with chemical disinfectants, alcohol, hydrogen peroxide, or other products, such as hand sanitizer, counter-cleaning wipes, or other industrial or surface cleaners. 
+      </div>
+    </div>
+</div>
+
+  <div class="card">
+    <div class="card-header" id="headingThre">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse6">
+        Is the new COVID-19 variant more dangerous for children? 
+        </button>
+      </h2>
+    </div>
+    <div id="collapse5" class="collapse" aria-labelledby="headingThre" data-parent="#accordionExample">
+      <div class="card-body">
+         Experts are continuing to monitor these variants around the world to better understand their impact, including on children. So far, the evidence doesn’t suggest that these variants are specifically targeting children, and severe illness in young people remains relatively rare.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>  
+<div class="col-md-6">
+
+      <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOn">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left ho" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse4">
+          Is at-home specimen collection available?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapse6" class="collapse " aria-labelledby="headingOn" data-parent="#accordionExample">
+      <div class="card-body">
+        Yes. At-home testing and collection allow you to collect a specimen at home and either send it to a testing facility or preform the test at home. You and your healthcare provider might consider either an at-home collection kit or an at-home test if you have signs and symptoms of COVID-19 or if you can’t get testing at a local healthcare facility.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTw">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse5">
+          What is contact tracing?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse7" class="collapse" aria-labelledby="headingTw" data-parent="#accordionExample">
+      <div class="card-body">
+        Contact tracing has been used for decades by state and local health departments to slow or stop the spread of infectious diseases. Contact tracing slows the spread of COVID-19 by Letting people know they may have been exposed to COVID-19 and should monitor their health for signs and symptoms.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThre">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse6">
+        What is Community Mitigation?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse8" class="collapse" aria-labelledby="headingThre" data-parent="#accordionExample">
+      <div class="card-body">
+        Community mitigation is a set of actions that people and communities can take to slow the spread of infectious diseases like COVID-19. The goal of community mitigation in areas with local COVID-19 transmission is to slow its spread and to protect all individuals, 
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThre">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse6">
+        Does the weather determine where Covid-19 occurs?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse9" class="collapse" aria-labelledby="headingThre" data-parent="#accordionExample">
+      <div class="card-body">
+        No. There is currently no conclusive evidence that either weather (short term variations in meteorological conditions) or climate (long-term averages) have a strong influence on transmission.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThre">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed ho" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse6">
+      Why did WHO stop clinical trials on hydroxychloroquine as a treatment?
+      
+        </button>
+      </h2>
+    </div>
+    <div id="collapse10" class="collapse" aria-labelledby="headingThre" data-parent="#accordionExample">
+      <div class="card-body">
+        The Solidarity trial, the UK's Recovery trial, and a Cochrane review of other evidence on hydroxychloroquine conclusively showed that hydroxychloroquine did not reduce deaths among hospitalized COVID-19 patients.  
+      </div>
+    </div>
+  </div>
+
+</div>
+      
+    </div>
+
+
+
+
+
+  </div>
+  
+</div>
+
+
+
+<div class="container" id="Blog" style="padding-top:70px">
+  
+<div class="row  bg-lightdark" style="background-image:url({%static 'images/bg-white.png' %} ); padding-bottom: 50px;">
+<div class="col-md-12 text-center">
+        <h1 class="pt-3">Our Most Popular Blog</h1><p class="pt-4"><span  style="font-size: 14px;">
+Blogging helps business owners to engage with customers.<br/> Blogging connects similar thinker and communities of people worldwide.
+</span></p>
+</div>
+<div class="container ">
+  <div class="row pt-5">
+<div class="col-md-4  col-sm-12 ">
+
+<div class="card main shadow " style="width: 28rem;">
+  <img src={%static "images/b1.jpg" %} class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title ho">Hopes that wave of infections had peaked fade</h5>
+    <p class="card-text">Tim Spector OBE, lead scientist on the ZOE COVID Study app and Professor of Genetic Epidemiology at King’s College London, comments on the latest data</p>
+    <a href="https://covid.joinzoe.com/post/hopes-that-wave-of-infections-had-peaked-fade" class="btn btn-primary btho" target="_blank">View More</a>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-12 ">
+
+<div class="card shadow main" style="width: 28rem;">
+  <img src= {%static "images/b2.jpg" %} class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title ho">Delhi CM says preparing for worst-case scenario</h5>
+    <p class="card-text">Here's what you need to know:India reports 42,982 new Covid-19 cases, 41,726 recoveries and 533 deaths in the last 24 hours, as per the Union Health Ministry</p>
+    <a href="https://economictimes.indiatimes.com/news/newsblogs/latest-news-live-updates-august-5/liveblog/85057686.cms" class="btn btn-primary btho" target="_blank">View More</a>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4  col-sm-12">
+
+<div class="card shadow main" style="width: 28rem;">
+  <img src={%static "images/b3.jpg" %} class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title ho">Coronavirus (Covid-19) — NEJM Latest Covid-19 news and updates</h5>
+    <p class="card-text">The spread of Covid-19 has caused the death of hundreds of thousands across the world, posing the biggest public health threat of this generation.</p>
+    <a href="https://www.nejm.org/coronavirus" class="btn btn-primary btho" target="_blank">View More</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid" id="Advisory">
+<div class="container">
+  <div class="row" style="padding-top:60px; padding-bottom: 30px; align-items: stretch;">
+  <div class="col-md-12 text-center">
+    <h5 class="pt-4">Know what message</h5><h1>WHO's Director-General gave</h1>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-5 pt-4 pb-3">
+      <img src={%static "images/who.jpg" %} style="border-radius: 50%; width: 100%">
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-6 pt-5">
+    <i class="icofont-quote-left icofont-2x" style="color: grey;"></i>
+    <p style=" font-size: 1.2rem; text-align: justify;" class="pt-3"><i>Since that moment, the COVID-19 pandemic has taken so many lives and caused massive disruption to families, societies and economies all over the world. But it also triggered the fastest and most wide-reaching response to a global health emergency in human history. The hallmarks of this response have been an unparalleled mobilization of science, a search for solutions and a commitment to global solidarity. Acts of generosity, large and small, equipped hospitals with the tools that health workers needed to stay safe and care for their patients. Outpourings of kindness have helped society’s most vulnerable through troubled times.</i></p>
+    <i class="icofont-quote-right icofont-2x" class="" style="color:grey"></i>
+    <h4 class="text-right pt-4" style="color:#ff8c1a">Dr Tedros Adhanom Ghebreyesus</h4><p class="text-right pb-3"><i><b>Director-General of the World Health Organization</i></b></p>
+
+  
+  </div>
+  
+</div>
+</div>
+
+<script src="js/aos.js"></script>
+<script >
+  AOS.init();
+</script>
+{% endblock %}

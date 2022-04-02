@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<div class="container-fluid contain">
+<div class="row">
+	<div class="col-md-12 text-center">
+		<div class="container-fluid">
+			<h1 style="padding-top: 15px; font-size: 3rem; font-weight: 700" data-aos="zoom-out-right">Prediction</h1>
+			<hr style=" border-bottom: 4px solid #001133; display:inline-block; margin: 0; width: 12rem;">
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row" style="margin-bottom: 100px;">
+	<div class="col-md-1"></div>
+	<div class="col-md-10 ">
+		<img src="data:image/png;base64,{{graphic|safe}}" width="100%">
+	</div>
+	<div class="col-md-1"></div>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends 'base.html'%}
+{% block content %}
+
+
+{% include 'menu.html' %}
+
+	
+<div class="col-md-5 border shadow p-5 mt-5 mb-5">
+
+	<form method="post" action="">
+	<div class="row pt-3 ">
+		<div class="col-md-5">
+	<label class=" pb-1">SELECT STATE<span class="text-danger">*</span></label>
+		<select name="state1" required="required">
+			<option value="">------------</option>
+				<option value="">------------</option>
+			<option>Andaman and Nicobar</option>
+			<option>Andhra Pradesh</option>
+			<option>Arunachal Pradesh</option>
+			<option>Assam</option>
+			<option>Bihar</option>
+			<option>Chandigarh</option>
+			<option>Chhattisgarh</option>
+			<option>Dadra and Nagar Haveli</option>
+			
+			<option>Delhi</option>
+			<option>Goa</option>
+			<option>Gujarat</option>
+			<option>Haryana</option>
+			<option>Himachal Pradesh</option>
+			<option>Jammu and Kashmir</option>
+			<option>Jharkhand</option>
+			<option>Karnataka</option>
+			<option>Kerala</option>
+			<option>Ladakh</option>
+			<option>Lakshadweep</option>
+			<option>Madhya Pradesh</option>
+			<option>Maharashtra</option>
+			<option>Manipur</option>
+			<option>Meghalaya</option>
+			<option>Mizoram</option>
+			<option>Nagaland</option>
+			<option>Odisha</option>
+			<option>Puducherry</option>
+			<option>Punjab</option>
+			<option>Rajasthan</option>
+			<option>Sikkim</option>
+			<option>Tamil Nadu	</option>
+			<option>Telangana</option>
+			<option>Tripura</option>
+			<option>Uttar Pradesh	</option>
+			<option>Uttarakhand</option>
+			<option>West Bengal	</option>
+			</select><br/>
+</div>
+<div class="col-md-2"></div>
+<div class="col-md-5">
+	<label class=" pb-1">SELECT STATE<span class="text-danger">*</span></label>
+		<select name="state2" required="required">
+			<option value="">------------</option>
+				<option value="">------------</option>
+			<option>Andaman and Nicobar</option>
+			<option>Andhra Pradesh</option>
+			<option>Arunachal Pradesh</option>
+			<option>Assam</option>
+			<option>Bihar</option>
+			<option>Chandigarh</option>
+			<option>Chhattisgarh</option>
+			<option>Dadra and Nagar Haveli</option>
+			
+			<option>Delhi</option>
+			<option>Goa</option>
+			<option>Gujarat</option>
+			<option>Haryana</option>
+			<option>Himachal Pradesh</option>
+			<option>Jammu and Kashmir</option>
+			<option>Jharkhand</option>
+			<option>Karnataka</option>
+			<option>Kerala</option>
+			<option>Ladakh</option>
+			<option>Lakshadweep</option>
+			<option>Madhya Pradesh</option>
+			<option>Maharashtra</option>
+			<option>Manipur</option>
+			<option>Meghalaya</option>
+			<option>Mizoram</option>
+			<option>Nagaland</option>
+			<option>Odisha</option>
+			<option>Puducherry</option>
+			<option>Punjab</option>
+			<option>Rajasthan</option>
+			<option>Sikkim</option>
+			<option>Tamil Nadu	</option>
+			<option>Telangana</option>
+			<option>Tripura</option>
+			<option>Uttar Pradesh	</option>
+			<option>Uttarakhand</option>
+			<option>West Bengal	</option>
+			</select><br/>
+</div></div>
+<label class="pt-3 pb-1">SELECT CASE TYPE<span class="text-danger">*</span></label>
+		<select name="case" class="form-control">
+			<option value="">------------</option>
+			<option>Confirmed</option>
+			<option>Cured</option>
+			<option>Deaths</option>
+		</select>
+
+	
+
+		{% csrf_token %}
+
+
+		<button type="submit" class=" btn btn-outline-dark text-center rounded-pill pt-2 mt-4 btho">&nbsp;&nbsp;&nbsp;&nbsp;SUBMIT&nbsp;&nbsp;&nbsp;&nbsp;</button>
+
+</form>
+		
+		
+</div></div>
+{% endblock %}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css' %}">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{%static 'icofont/icofont.min.css' %}">
+<link rel="stylesheet" type="text/css" href="css/aos.css">
+<style type="text/css">
+  .move{ animation: anim1 20s reverse infinite;  }
+  @keyframes anim1{
+    from{ transform: rotate(0deg); }
+    to{transform: rotate(360deg);}
+  }
+  .main:hover{animation: anim2 0.7s linear }
+    @keyframes anim2{
+    from{margin-top: 15px }
+    to{margin-top: 1px}
+    }
+
+.btho{background-color: transparent; color: black;outline-color: black;}
+
+  .btho:hover{animation: anim3 3s infinite; }
+  @keyframes anim3{
+  from{background-color: transparent; color: black;}
+  to{background-color: #8C1AFF; color: white; outline-color: black;}
+  }
+
+
+<!-----.btho2{background-color: transparent; color: white;outline-color: white;}
+
+  .btho2:hover{animation: anim4 3s infinite; }
+  @keyframes anim4{
+  from{background-color: transparent; color: white ;}
+  to{background-color: white; color: #8C1AFF; outline-color: #8C1AFF;}
+  }----}
+
+
+
+  .ho:hover { color: #8C1AFF}
+  .main{margin-top: 15px;}
+  .main:hover{margin-top: 1px;}
+  .navbar li a{padding-left: 30px !important; font-size: 20px;}
+
+</style>
+	
+</head>
+<body style="overflow-x: hidden;">
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+  <a class="navbar-brand" href="#"><img src={%static "images/logo.png" %}></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav pt-3 " style="padding-left:200px" > 
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/main">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/main/?#Information">Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/main/?#Visualization">Visualization</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/main/?#FAQ">FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/main/?#Blog">Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/main/?#Advisory">Advisory</a>
+      </li>
+      <li class="nav-item " style="margin-left: 200px;">
+        <a href="{% url 'pred' %}" class=" btn btn-outline-dark  rounded-pill btho mt-2 mb-2 p-2" >PREDICTION&nbsp;&nbsp;&nbsp;</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div style="padding-top:70px">
+{% block content %}
+
+
+{% endblock %}
+</div>
+
+
+
+
+<div style="background-image:url({%static 'images/bg-white.png' %} ); ">
+<div class="container-fluid" style="background-color: rgba(140, 26, 255,0.75);">
+<div class=" pb-5">
+      <div class="row pt-5">
+        <div class="col-md-3 pl-5">
+          <div class="row">
+            <div class="col-md-3 pt-3">
+          <img src="{%static "images/table2.png" %}">
+        </div>
+        <div class="col-md-8"><h1 style="color:white;" class="pt-5">About COVID</h1><br></div></div>
+          <p style="text-align: justify; color:white;font-size: 14px;">
+            Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide, leading to an ongoing pandemic.
+          </p>
+          
+        </div>
+
+        <div class="col-md-2 text-left pt-5" style="padding-left: 90px">
+          <h1 style="color:white;">Navigate</h1><br>
+          <a href=""style="color:white;">>   Home</a>
+          <br><br>
+          <a href="http://127.0.0.1:8000/main/?#Information"style="color:white">>   Information</a>
+          <br><br>
+          <a href="http://127.0.0.1:8000/main/?#FAQ"style="color:white;">>   FAQ</a>
+          <br><br>
+        </div>
+
+        <div class="col-md-3 pr-2 pt-5">
+          <h1 style="color:white;">Special Reference</h1><br>
+          <a href="http://127.0.0.1:8000/predict/"style="color:white;">>   Predictions</a>
+          <br><br>
+          <a href="http://127.0.0.1:8000/main/?#Visualization"style="color:white;">>   Analysis</a>
+          <br><br>
+          <a href="http://127.0.0.1:8000/main/?#Blog"style="color:white;">>   Blogs</a>
+          <br><br>
+        </div> 
+  <div class="col-md-4 pr-5 text-left pb-5 pr-5 ">
+         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-93882829-18be-4e9f-b1fe-7da19fdcbd85"></div>
+        </div>
+
+      </div>
+
+      </div>
+  </div>
+</div>
+</div>
+
+
+<script src="js/aos.js"></script>
+<script >
+  AOS.init();
+</script>
+</body>
+</html>
